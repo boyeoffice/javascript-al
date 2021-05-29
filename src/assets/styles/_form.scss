@@ -1,0 +1,36 @@
+.custom-nav-form {
+    & .input-group-text {
+        background-color: transparent;
+        color: #fff;
+        opacity: .5;
+        border-color: rgba(222, 222, 222, 0.8);
+        border-right: none;
+    }
+    & .form-control {
+        background-color: transparent;
+        color: #fff;
+        opacity: .5;
+        border-color: rgba(222, 222, 222, 0.8);
+        border-left: none;
+        &:focus {
+            border-color: rgba(222, 222, 222, 0.8);
+            box-shadow: none;
+            opacity: .8;
+        }
+    }
+}
+
+.input-group-nav {
+    & .input-group-text {
+         opacity: .8;
+    }
+}
+
+.navbar-nav {
+    & .form-inline {
+        width: 100%;
+        & .input-group {
+            width: 100%;
+        }
+    }
+}

@@ -1,6 +1,26 @@
 <template>
-  <div>
-    <div class="content-header">
+  <div class="mt-4">
+    <b-row>
+      <b-col cols="12" md="3" v-for="(data,index) in 10" :key="index">
+        <b-card
+          title="Beef Burger"
+          img-src="https://picsum.photos/600/300/?image=25"
+          tag="article"
+          style="max-width: 20rem;"
+          class="mb-2 custom-card">
+        <b-card-text>Onion with cheese</b-card-text>
+        <b-row>
+          <b-col>
+            N1000
+          </b-col>
+          <b-col cols="auto">
+            <b-button variant="outline-danger" size="sm">Add</b-button>
+          </b-col>
+        </b-row>
+        </b-card>
+      </b-col>
+    </b-row>
+    <!--<div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2"></div>
       </div>
@@ -24,7 +44,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 

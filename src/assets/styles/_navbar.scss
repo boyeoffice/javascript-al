@@ -1,0 +1,30 @@
+.navbar-translate {
+    & .title {
+        font-size: 1.5rem;
+    }
+    & .time {
+        display: block;
+        font-size: .8rem;
+    }
+}
+
+.custom-nav-pill {
+    & .nav {
+        opacity: .4;
+        & .nav-item {
+            opacity: 1;
+            & .nav-link {
+                color: #fff;
+                font-size: .8rem;
+                &.active, &:hover {
+                    border-color: #EA7C69 #EA7C69 #252836;
+                    color: #EA7C69;
+                }
+            }
+        }
+    }
+    & .custom-select {
+        background-color: transparent;
+        color: #fff;
+    }
+}

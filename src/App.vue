@@ -1,27 +1,24 @@
 <template>
   <div id="app" class="wrapper">
       <navbar/>
-      <sidebar/>
-      <div class="content-wrapper">
+      <b-container>
+        <nav-pill/>
         <router-view/>
-      </div>
-    <main-footer/>
-    <right-sidebar/>
+      </b-container>
   </div>
 </template>
 
 <script>
   import Navbar from '@/components/ui/Navbar'
-  import Sidebar from '@/components/ui/Sidebar'
-  import MainFooter from '@/components/ui/MainFooter'
-  import RightSidebar from '@/components/ui/RightSidebar'
+  import NavPill from '@/components/ui/NavPill'
+  // import Sidebar from '@/components/ui/Sidebar'
+  // import MainFooter from '@/components/ui/MainFooter'
+  // import RightSidebar from '@/components/ui/RightSidebar'
 
   export default {
     components: {
       Navbar,
-      Sidebar,
-      MainFooter,
-      RightSidebar
+      NavPill
     }
   }
 </script>

@@ -1,30 +1,39 @@
 <template>
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
-	<ul class="navbar-nav">
-		<li class="nav-item">
-			<a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-		</li>
-	</ul>
-	<form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
+  <div>
+  <b-navbar toggleable="lg" type="dark" variant="light">
+    <b-container>
+        <div class="navbar-translate">
+          <b-navbar-brand href="#" class="title">NavBar</b-navbar-brand>
+          <span class="time">Thursday, 27 May 2021</span>
         </div>
-      </div>
-    </form>
-  <ul  class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a href="#" class="nav-link" role="button" style="font-size: 20px;">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="badge badge-success navbar-badge">3</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" class="mt-3 mt-lg-0" is-nav>
+
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <b-nav-form :class="{'custom-nav-form': true, 'input-group-nav': focus}">
+              <b-input-group size="md">
+                <b-input-group-prepend is-text>
+                  <b-icon icon="search"></b-icon>
+                </b-input-group-prepend>
+                <b-form-input type="search" placeholder="Search for food coffe etc..." @focus="focus = true" @blur="focus = false"></b-form-input>
+              </b-input-group>
+            </b-nav-form>
+          </b-navbar-nav>
+        </b-collapse>
+    </b-container>
+  </b-navbar>
+</div>
 </template>
 
-<style>
-</style>
+<script>
+export default {
+  data () {
+    return {
+      focus: false
+    }
+  }
+}
+</script>
