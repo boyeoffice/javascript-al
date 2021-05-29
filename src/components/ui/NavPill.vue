@@ -13,12 +13,8 @@
                 <b-col>
                     <h5>Choose Dishes</h5>
                 </b-col>
-                <b-col>
-                    <b-row align-h="end">
-                        <b-col cols="12" md="5">
-                            <b-form-select v-model="selected" :options="options"></b-form-select>
-                        </b-col>
-                    </b-row>
+                <b-col cols="auto">
+                    <b-form-select v-model="selected" :options="options"></b-form-select>
                 </b-col>
             </b-row>
         </div>

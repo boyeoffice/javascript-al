@@ -1,6 +1,6 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="dark" variant="light">
+  <b-navbar toggleable="lg" type="dark" variant="secondary">
     <b-container>
         <div class="navbar-translate">
           <b-navbar-brand href="#" class="title">NavBar</b-navbar-brand>
@@ -22,6 +22,7 @@
               </b-input-group>
             </b-nav-form>
           </b-navbar-nav>
+          <b-navbar-nav class="ml-auto"><b-button v-b-toggle.sidebar-right>Toggle Sidebar</b-button></b-navbar-nav>
         </b-collapse>
     </b-container>
   </b-navbar>
