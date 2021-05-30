@@ -32,10 +32,14 @@
 .navbar-badge {
     position: absolute;
     right: 10px;
+    top: 0;
     border-radius: 50%;
 }
 .navbar-nav {
     & .nav-link {
         position: relative;
     }
+}
+.nav-item {
+    position: relative;
 }

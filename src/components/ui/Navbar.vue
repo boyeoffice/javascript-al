@@ -8,6 +8,17 @@
         </div>
 
         <!--<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>-->
+        <div class="d-flex">
+          <div class="nav-item d-md-none">
+            <b-link href="#" v-b-toggle.nav-collapse class="text-white nav-link">
+              <b-icon-search/>
+            </b-link>
+          </div>
+          <div class="nav-item">
+            <b-link href="#" class="text-white nav-link" v-b-toggle.sidebar-right><b-icon-cart font-scale="1.5"/></b-link>
+            <span class="text-white bg-danger badge navbar-badge">2</span>
+          </div>
+        </div>
 
         <b-collapse id="nav-collapse" class="mt-3 mt-lg-0" is-nav>
 
@@ -23,15 +34,6 @@
             </b-nav-form>
           </b-navbar-nav>
         </b-collapse>
-        <div class="navbar-nav d-md-none">
-          <b-link href="#" class="text-white nav-link">
-            <b-icon-search/>
-          </b-link>
-        </div>
-        <div class="navbar-nav">
-          <b-link href="#" class="text-white nav-link" v-b-toggle.sidebar-right><b-icon-cart font-scale="1.5"/></b-link>
-          <span class="text-white bg-danger badge navbar-badge">2</span>
-        </div>
     </b-container>
   </b-navbar>
 </div>
