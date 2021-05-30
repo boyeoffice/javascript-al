@@ -13,9 +13,9 @@
                 <b-col>
                     <h5>Choose Dishes</h5>
                 </b-col>
-                <b-col cols="auto">
+                <!--<b-col cols="auto">
                     <b-form-select v-model="selected" :options="options"></b-form-select>
-                </b-col>
+                </b-col>-->
             </b-row>
         </div>
     </div>
