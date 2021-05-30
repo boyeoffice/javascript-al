@@ -7,7 +7,7 @@
           <span class="time">Thursday, 27 May 2021</span>
         </div>
 
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <!--<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>-->
 
         <b-collapse id="nav-collapse" class="mt-3 mt-lg-0" is-nav>
 
@@ -22,8 +22,16 @@
               </b-input-group>
             </b-nav-form>
           </b-navbar-nav>
-          <b-navbar-nav class="ml-auto"><b-button v-b-toggle.sidebar-right>Toggle Sidebar</b-button></b-navbar-nav>
         </b-collapse>
+        <div class="navbar-nav d-md-none">
+          <b-link href="#" class="text-white nav-link">
+            <b-icon-search/>
+          </b-link>
+        </div>
+        <div class="navbar-nav">
+          <b-link href="#" class="text-white nav-link" v-b-toggle.sidebar-right><b-icon-cart font-scale="1.5"/></b-link>
+          <span class="text-white bg-danger badge navbar-badge">2</span>
+        </div>
     </b-container>
   </b-navbar>
 </div>

@@ -28,3 +28,14 @@
         color: #fff;
     }
 }
+
+.navbar-badge {
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+}
+.navbar-nav {
+    & .nav-link {
+        position: relative;
+    }
+}
