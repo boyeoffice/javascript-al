@@ -8,8 +8,8 @@
         </div>
 
         <!--<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>-->
-        <div class="d-flex">
-          <div class="nav-item d-md-none">
+        <div class="d-flex d-md-none">
+          <div class="nav-item">
             <b-link href="#" v-b-toggle.nav-collapse class="text-white nav-link">
               <b-icon-search/>
             </b-link>
@@ -34,6 +34,12 @@
             </b-nav-form>
           </b-navbar-nav>
         </b-collapse>
+        <div class="d-none d-md-flex">
+          <div class="nav-item">
+            <b-link href="#" class="text-white nav-link" v-b-toggle.sidebar-right><b-icon-cart font-scale="1.5"/></b-link>
+            <span class="text-white bg-danger badge navbar-badge">2</span>
+          </div>
+        </div>
     </b-container>
   </b-navbar>
 </div>
