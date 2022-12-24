@@ -9,18 +9,16 @@
 
 // return masked string
 function maskify(cc) {
-    const lastFour = cc.substr(cc.length - 4)
-    // console.log(lastFour)
-    let str = cc.slice(0, -4)
-    str = str.split('')
-    str = str.map(item => item.replace(item, '#')).join('')
-    // num = cc.replace(num, '#')
-    str = str + lastFour
-    return str
-    // console.log(str)
+  const lastFour = cc.substr(cc.length - 4)
+  if (lastFour.length < 4) {
+    return cc
+  }
+  let str = cc.slice(0, -4)
+  str = str.split('')
+  str = str.map(item => item.replace(item, '#')).join('')
+  str = str + lastFour
+  return str
 }
-
-// maskify('67993900389490')
 
 module.exports= { maskify }
   
