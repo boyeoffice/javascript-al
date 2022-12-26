@@ -20,6 +20,6 @@ function descendingOrder2(n) {
   return parseInt(arr.join(''));
 }
 
-console.log(descendingOrder2(7467390238))
+// console.log(descendingOrder2(7467390238))
 
 module.exports = { descendingOrder }
