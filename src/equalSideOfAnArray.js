@@ -45,6 +45,6 @@ const  fn = (arr) => {
   return arr.findIndex((x, i, arr) => (total - (sum += x)) * 2 + x === total) ;
 }
 
-console.log(findEvenIndex([1,2,3,4,3,2,1]));
+// console.log(findEvenIndex([1,2,3,4,3,2,1]));
 
 module.exports = { findEvenIndex }
