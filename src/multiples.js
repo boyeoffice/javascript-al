@@ -4,6 +4,7 @@
 
 // Note: If the number is a multiple of both 3 and 5, only count it once.
 
+// Solution 1
 function range(start, end) {
   const length = end - start;
   return Array.from({ length }, (_, i) => start + i);
@@ -23,5 +24,17 @@ function solution(number){
   return sum;
 }
 
-console.log(solution(10));
+// Solution 2
+function solution2(number){
+  var sum = 0;
+  
+  for(var i = 1;i< number; i++){
+    if(i % 3 == 0 || i % 5 == 0){
+      sum += i
+    }
+  }
+  return sum;
+}
+
+console.log(solution2(10));
 // console.log(range(3, 10));
