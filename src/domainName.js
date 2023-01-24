@@ -15,6 +15,9 @@ function domainName2(url){
   return match ? match[1] : '';
 }
 
+
+
+
 function domainName3(url){
   url = url.replace("https://", '');
   url = url.replace("http://", '');
